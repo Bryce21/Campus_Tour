@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Awesome University: Admission Prcess</title>
+	<meta charset="UTF-8">
+	<title>Awesome University: Notable Graduates</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -11,6 +12,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
+
 	<!-- Navbar -->
 	<div>
 		<nav class="navbar navbar-default">
@@ -63,45 +65,23 @@
 		</nav>
 	</div>
 
-	<!-- Content Div -->
-	<div>
-		<div class="container">
-			<div class="row">
-				<div class="col xs-5">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg" allowfullscreen></iframe>
-					</div>
-				</div>
 
-				
-				
-			</div>
-		</div>
-		
-	</div>
+	<ul>
+		<% for(var i=0; i<students.length; i++) {%>
+		<li>
+			<span><%= students[i].name %></span>
+			<span><%= students[i].major %></span>
+			<span><%= students[i].age %></span>
+		</li>
+		<% } %>
+	</ul>
 
-
-	<a href="notable_graduates.ejs">Notable Graduates</a>
-	
-	
-
-
-
-	<hr>
-
-	<!-- Footer Div -->
-	<div>
-		<footer class="page-footer font-small">
-
-			<!-- Copyright -->
-			<div class="footer-copyright text-center py-3">© 2018 Copyright:
-				<a href="#"> Example Corp</a>
-				<p>Made by Bryce Reinhard</p>
-			</div>
-			<!-- Copyright -->
-
-		</footer>
-	</div>
-	<!-- Footer -->
+	<form method="post" action="/addStudent">
+		<label>Enter Your Name</label><br>
+		<input type="text" name="name" placeholder="Enter Name" required>
+		<input type="text" name="major" placeholder="Enter Major" required>
+		<input type="number" name="age" placeholder="Enter Age" required>
+		<input type="submit" value="Add Student">
+	</form>
 </body>
 </html>
