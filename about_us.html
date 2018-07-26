@@ -9,6 +9,82 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<title>Wentworth Campus</title>
+<head>
+<style>
+
+
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 8px;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.hero-image {
+  background-image: url("https://wentworthds.hobsonsradius.com/crm/viewImage?id=805000000106013&fileName=%2FApplication+header-01.png");
+  height: 20%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+div.gallery {
+    border: 3px solid #777;
+}
+
+div.gallery:hover {
+    border: 3px solid #DE202C;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
 </head>
 <body>
 	<!-- Navbar -->
@@ -50,64 +126,79 @@
 						<li><a href="about_us.html">About Us</a></li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact Us <span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="mailto:name@AwesomeUniversity.com">Email</a></li>
-								<li><a href="#">Phone</a></li>
-								<li><a href="#">Fax</a></li>
-								
-							</ul>
-						</li>
-					</ul>
-				</div><!-- /.navbar-collapse -->
-			</div><!-- /.container-fluid -->
-		</nav>
+							<ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+              <li><a href="mailto:name@AwesomeUniversity.com">Email</a></li>
+              <li class="divider"></li>
+              <li class="dropdown-submenu"></li>
+                <a href="#">Admissions: 617-989-4000</a>
+                <a href="#">Housing: 617-989-4010</a>
+                <a href="#">Fax: 617-989-4099</a>
+            </ul>
+        </div>
 	</div>
+</nav>
+</div>
 
-	<!-- Content -->
-	<div class="container">
+
+	<!-- Header Stuff-->
+	<div class="container-fluid">
 		<div class="jumbotron">
-
 			<div class="row">
-
-				<div class="col xs-6">
-					<div class="panel panel-default">
-						<div class="panel-heading">Bacon Ipsum</div>
-						<div class="panel-body">
-							<p>
-								Meatloaf buffalo porchetta t-bone tenderloin beef kielbasa landjaeger swine biltong. Pork loin shoulder drumstick tri-tip pork belly.
-							</p>
-						</div>
-					</div>
+				<div class="col-xs-7">
+					<h1>Awesome University</h1>
+					<p>Here at AU if you plan to go into the STEM field you will find a diverse array of learning, social/cultural, professional, and practice communities in the College of Sciences. These communities and your fellow students will provide you a supportive climate and a culture of belonging where you are respected and affirmed. In addition to our academic programs, the AU College of Sciences includes an alliance of nationally prominent centers, institutes, and affiliated research and outreach units working to fulfill our mission: Making Educational and Systems Work for All.</p>
 				</div>
 
-				<div class="col xs-6">
-					<div class="row">
-						<div class="col xs-6">
-							<div class="panel panel-default">
-								<div class="panel-heading">Bacon Ipsum</div>
-								<div class="panel-body">
-									<p>
-										Meatloaf buffalo porchetta t-bone tenderloin beef kielbasa landjaeger swine biltong. Pork loin shoulder drumstick tri-tip pork belly flank pastrami. 
-									</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="col xs-6">
-							<div class="panel panel-default">
-								<div class="panel-heading">Bacon Ipsum</div>
-								<div class="panel-body">
-									<p>
-										Meatloaf buffalo porchetta t-bone tenderloin beef kielbasa landjaeger swine biltong. Pork loin shoulder drumstick tri-tip pork belly flank pastrami. 
-								</div>
-							</div>
-						</div>
-
-					</div>
+				<div class="col-xs-5">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/University_of_Otago.jpg/1600px-University_of_Otago.jpg" class="img-responsive img-rounded">
 				</div>
 			</div>
 		</div>
 	</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="iraallen.jpg">
+      <img src="https://ramtechmod-ubqgecjumemdsor7wr.netdna-ssl.com/wp-content/uploads/2017/11/mexia-lab-interior.jpg" alt="Ira Allen" width="300" height="200">
+    </a>
+    <div class="desc">Ira Allen open floor plan and labs allows academic departments to improve the use of instructional technology and lab equipment.</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="lab.jpg">
+      <img src="https://www.concordia.ca/content/concordia/en/encs/mechanical-industrial/facilities-services/teaching-labs/computer-integrated-manufacturing-lab/jcr:content/content-main/image.img.jpg/1408476600308.jpg" alt="Manf Lab" width="600" height="400">
+    </a>
+    <div class="desc">The Manufacturing Center, located in Williston Hall, has four laboratory areas.  (1) The machining lab has six Computer Numerically Controlled (CNC) lathes, six CNC 3-axis knee mills, a CNC 3-axis bed mill, two Vertical Machining Centers, and a Coordinate Measuring Machine.</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="hallway.jpg">
+      <img src="http://www.hursttx.gov/Home/ShowImage?id=883&t=636198314933770000" alt="Hallway" width="600" height="400">
+    </a>
+    <div class="desc">Students have access to many study areas and classrooms inside the academic buildings.</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="beatty.jpg">
+      <img src="https://furrandwegman.com/wp-content/uploads/2014/09/Tutu-1-720x511.jpg" alt="Beatty" width="600" height="400">
+    </a>
+    <div class="desc">Beatty Hall contains many resources for students including Flanagan Campus Center, Beatty Cafe, the Center for Academic Excellence, Tech Spot, the library, and a lecture hall.</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+
+
+
 	<!-- Footer Div -->
 	<div>
 		<footer class="page-footer font-small">
