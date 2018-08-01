@@ -65,23 +65,54 @@
 		</nav>
 	</div>
 
+	<div class="container">
+		<div class="jumbotron">
+			<center>
+				<ul class="list-group list-group-flush">
+					<% for(var i=0; i<students.length; i++) {%>
+					<li class="list-group-item">
+						<span><%= students[i].name %></span>
+						<span><%= students[i].major %></span>
+						<span><%= students[i].age %></span>
+					</li>
+					<% } %>
 
-	<ul>
-		<% for(var i=0; i<students.length; i++) {%>
-		<li>
-			<span><%= students[i].name %></span>
-			<span><%= students[i].major %></span>
-			<span><%= students[i].age %></span>
-		</li>
-		<% } %>
-	</ul>
+				</ul>
+			</center>
+		</div>
+	</div>
+	
+	<center>
+		<h3>Add to notable graduates: </h3>
+		<div style="width: 50%">
 
-	<form method="post" action="/addStudent">
-		<label>Enter Your Name</label><br>
-		<input type="text" name="name" placeholder="Enter Name" required>
-		<input type="text" name="major" placeholder="Enter Major" required>
-		<input type="number" name="age" placeholder="Enter Age" required>
-		<input type="submit" value="Add Student">
-	</form>
+		<form method="post" action="/addStudent">
+			<div class="form-group">
+				<label for="exampleFormControlInput1">Name</label>
+				<input type="text" class="form-control" id="name" placeholder="Name" name="name" required>
+			</div>
+			<div class="form-group">
+				<label for="major">Major</label>
+				<select class="form-control" id="major" name="major" required>
+					<option>CS</option>
+					<option>Math</option>
+					<option>Physics</option>
+					<option>Mechanical</option>
+					<option>BioMed</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="exampleFormControlSelect2">Age: </label>
+				<input type="number" class="form-control" id="age" name="age" placeholder="Age" required>
+			</div>
+			<div class="form-group">
+				<input type="submit" name="Submit">
+			</div>
+
+		</form>
+	</div>
+	</center>
+	
+	
 </body>
 </html>

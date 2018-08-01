@@ -97,7 +97,6 @@ var user = mongoose.model("Login", userSchema);
  
 
  app.post("/login", (req, res) => {
- 	console.log(req);
  	var myData = new user(req.body);
  	myData.save()
  	.then(item => {
