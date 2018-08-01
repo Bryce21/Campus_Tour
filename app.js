@@ -74,6 +74,10 @@ var user = mongoose.model("Login", userSchema);
  	res.sendFile(__dirname + "/about_us.html");
  });
 
+app.get('/humanities.html', function(req, res) {
+ 	res.sendFile(__dirname + "/humanities.html");
+ });
+
  app.get('/notable_graduates.ejs', (req, res) => {
  	db.collection('students').find().toArray((err, result) => {
  		if (err) return console.log(err)
